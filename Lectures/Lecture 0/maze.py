@@ -44,6 +44,7 @@ class QueueFrontier(StackFrontier):
             self.frontier = self.frontier[1:]
             return node
 
+# A* search algorithm
 class astar_search():
     def __init__(self, goal):
         self.target = goal.state
@@ -70,6 +71,10 @@ class astar_search():
             node = self.frontier[i]
             self.frontier.pop(i)
             return node
+
+# Dijkstra's Algorithm
+class Dijkstra():
+    pass
 
 
 class Maze():
